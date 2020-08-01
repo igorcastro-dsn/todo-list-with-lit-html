@@ -5,8 +5,11 @@ export class TodoList extends HTMLElement {
     constructor() {
         super();
 
-        this.newItem = '';
-        this.items = []; this.shadowDOM = this.attachShadow({ mode: "open" });
+        this.newItem = "";
+        this.items = []; 
+
+        this.shadowDOM = this.attachShadow({ mode: "open" });
+        
         this.render();
 
         this.setNewItem = event => {
@@ -14,16 +17,18 @@ export class TodoList extends HTMLElement {
         }
     }
 
-    getNewItem() {
-        return this.newItem;
-    }
-
     addListItem() {
         if (this.newItem) {
             this.items.push(this.newItem);
-            this.newItem = '';
+            this.newItem = "";
+            this.clearInput();
             this.render();
         }
+    }
+
+    clearInput() {
+        const input = this.shadowRoot.querySelector(".add-new-list-item-input");
+        input.value = "";
     }
 
     removeListItem(e) {
@@ -50,12 +55,13 @@ export class TodoList extends HTMLElement {
                         )}
                 </ul>
                 <div>
-                    <input class="add-new-list-item-input" type="text" .value=${this.getNewItem()} @input=${(e) => this.setNewItem(e)}>
+                    <input class="add-new-list-item-input" type="text" @input=${(e) => this.setNewItem(e)}>
                     <button class="editable-list-add-item icon" @click=${() => this.addListItem()}>
                         &oplus;
                     </button>
                 </div>
-            </div>`, this.shadowDOM
+            </div>`, 
+            this.shadowDOM
         );
     }
 }
