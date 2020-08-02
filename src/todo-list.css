@@ -1,13 +1,21 @@
-li, div > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.done {
+    text-decoration: line-through;
 }
 
-.icon {
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
-    float: right;
-    font-size: 1.8rem;
+.todo-item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.todo-item:hover {
+    background-color: #f6f6f6;
+}
+
+.close-icon {
+    position: absolute;
+    right: 2px;
+}
+
+.close-icon:active {
+    background-color: #E8E8E8;
 }

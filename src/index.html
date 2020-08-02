@@ -3,15 +3,26 @@
 <head>
     <meta charset="utf-8">
     <title>TODO List | Web Components</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <h1>Welcome to my to-do list</h1>
-    <p>
-        This example uses the lit-html to render html templates. 
-        More informations <a target="_blank" href="https://lit-html.polymer-project.org/">here</a>.
-    </p>
-    <wc-todo-list></wc-todo-list>
-    <script type="module" src="todo-list.js"></script>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"></a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a target="_blank" href="https://martinfowler.com/articles/micro-frontends.html">Micro Frontends</a></li>
+            <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
+            <li><a target="_blank" href="https://lit-html.polymer-project.org/">Lit-html</a></li>
+            <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <wc-todo-list></wc-todo-list>
+        <script type="module" src="todo-list.js"></script>
+    </div>
 </body>
 </html>
