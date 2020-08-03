@@ -8,17 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo"></a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><a target="_blank" href="https://martinfowler.com/articles/micro-frontends.html">Micro Frontends</a></li>
-            <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Web_Components">Web Components</a></li>
-            <li><a target="_blank" href="https://lit-html.polymer-project.org/">Lit-html</a></li>
-            <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">JavaScript</a></li>
-            </ul>
-        </div>
-    </nav>
+    <wc-menu></wc-menu>
+    <script type="module" src="menu.js"></script>
 
     <div class="container">
         <wc-todo-list></wc-todo-list>
