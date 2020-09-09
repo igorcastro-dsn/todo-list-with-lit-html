@@ -1,8 +1,8 @@
 # TODO List with lit-html
 A study project to understand the concepts of lit-html library.
 
-## environments:
-- https://git-personal-projects.rj.r.appspot.com/
+## Environments:
+- https://contador-de-macronutrientes-dot-git-personal-projects.rj.r.appspot.com/
 
 ## Local execution:
 ```
