@@ -1,14 +1,24 @@
 {
-  "name": "estudo-lit-html",
+  "name": "study-lit-html",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "es-dev-server --app-index src/index.html --node-resolve --watch --open"
+    "build": "rollup -c",
+    "serve": "serve dist/",
+    "start": "npm run build && npm run serve"
   },
-  "author": "",
+  "author": "Igor de Castro",
   "license": "ISC",
-  "devDependencies": {
-    "es-dev-server": "^1.57.0"
-  }
+  "devDependencies": {},
+  "dependencies": {
+    "rollup": "^2.26.11",
+    "rollup-plugin-copy": "^3.3.0",
+    "serve": "^11.3.2"
+  },
+  "keywords": [
+    "web-components",
+    "lit-html",
+    "javascript"
+  ]
 }
