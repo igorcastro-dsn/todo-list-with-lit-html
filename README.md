@@ -2,7 +2,7 @@
 A study project to understand the concepts of lit-html library.
 
 ## Environments:
-- https://contador-de-macronutrientes-dot-git-personal-projects.rj.r.appspot.com/
+- https://todo-list-dot-git-personal-projects.rj.r.appspot.com/
 
 ## Local execution:
 ```
